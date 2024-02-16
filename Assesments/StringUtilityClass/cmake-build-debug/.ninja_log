@@ -1,0 +1,4 @@
+# ninja log v5
+0	267	1708125785462993738	CMakeFiles/StringUtilityClass.dir/main.cpp.o	fbe6a33d20bb0dfd
+1	269	1708125785463739569	CMakeFiles/StringUtilityClass.dir/String.cpp.o	305c13090d49ddf4
+269	303	1708125785500151883	StringUtilityClass	bb0f953db58ce1ee
