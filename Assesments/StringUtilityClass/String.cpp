@@ -4,11 +4,13 @@
 String::String()
 {
     m_string = nullptr;
+    m_length = 0;
 }
 
 String::String(const char* _str)
 {
-    m_string = new char[(strlen(_str)) + 1];
+    m_length = strlen((_str));
+    m_string = new char[m_length + 1];
     strcpy(m_string, _str);
 
     std::cout << _str << std::endl;
@@ -16,6 +18,9 @@ String::String(const char* _str)
 
 String::String(const String& _other)
 {
+    m_length = _other.m_length;
+    m_string = new char[m_length + 1];
+    strcpy(m_string, _other.m_string);
 }
 
 String::~String()
@@ -44,5 +49,12 @@ bool String::EqualTo(const String& _other) const
 
 String& String::Append(const String& _str)
 {
-    // TODO: insert return statement here
+    char* newString = new char[m_length + _str.m_length + 1];
+    strcpy(newString, m_string);
+    strcat(newString, _str.m_string);
+    delete[] m_string;
+    m_string = newString;
+    m_length = strlen(m_string);
+
+    return *this;
 }

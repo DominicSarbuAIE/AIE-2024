@@ -50,6 +50,7 @@ private:
     * Put your internal data structures and members here
     */
     char* m_string;
+    size_t m_length; // Track length of string
 };
 
 #endif
