@@ -4,5 +4,5 @@ project(StringUtilityClass)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(StringUtilityClass main.cpp
-        String.cpp
-        String.h)
+        StringUtil.cpp
+        StringUtil.h)
