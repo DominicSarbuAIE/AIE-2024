@@ -75,7 +75,7 @@ StringUtil& StringUtil::Append(const StringUtil& _str)
 }
 
 // Adds str to the beginning of the string
-StringUtil &StringUtil::Prepend(const StringUtil &_str)
+StringUtil& StringUtil::Prepend(const StringUtil& _str)
 {
     size_t newLength = m_length + _str.Length();
     char* temp = new char[newLength + 1];
@@ -88,13 +88,13 @@ StringUtil &StringUtil::Prepend(const StringUtil &_str)
 }
 
 // Return the const char * that is useable with std::cout. eg: std::cout << str.cstr() << std::endl;
-const char *StringUtil::CStr() const
+const char* StringUtil::CStr() const
 {
     return m_string;
 }
 
 // Convert all characters to lowercase
-StringUtil &StringUtil::ToLower()
+StringUtil& StringUtil::ToLower()
 {
     for (size_t i = 0; i < m_length; i++) {
         m_string[i] = tolower(m_string[i]);
@@ -103,7 +103,7 @@ StringUtil &StringUtil::ToLower()
 }
 
 // Convert all characters to uppercase
-StringUtil &StringUtil::ToUpper()
+StringUtil& StringUtil::ToUpper()
 {
     for (int i = 0; i < m_length; i++) {
         m_string[i] = toupper(m_string[i]);
@@ -112,12 +112,12 @@ StringUtil &StringUtil::ToUpper()
 }
 
 // Returns the location of the findString. If not found, return -1
-size_t StringUtil::Find(const StringUtil &_str)
+size_t StringUtil::Find(const StringUtil& _str)
 {
 
 }
 // Returns the location of the strToFind. Beginning the search from startIndex. If not found, return -1
-size_t StringUtil::Find(size_t _startIndex, const StringUtil &_str)
+size_t StringUtil::Find(size_t _startIndex, const StringUtil& _str)
 {
 
 }
