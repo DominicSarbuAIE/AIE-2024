@@ -13,7 +13,7 @@ int main()
     cout<<endl<<"CharacterAt Function:"<<endl<<"your letter is, "<<_string.CharacterAt(4)<<endl;
 
     // EqualTo Function evidence
-    cout<<endl<<"EqualTo Function:"<<endl<<_string.EqualTo("Hello World")<<std::endl;
+    cout<<endl<<"EqualTo Function:"<<endl<<_string.EqualTo("Hello World")<<endl;
     if(_string.EqualTo("Hello World")){
         cout<<"True"<<endl;
     }
@@ -22,21 +22,24 @@ int main()
     }
 
     // Append Function evidence
-    cout << endl << "Append Function:" << endl;
-    _string.Append(StringUtil("!!!"));
-    cout << _string.CStr() << endl;
+    StringUtil appendedString(_string); // Create copy of _string
+    appendedString.Append(StringUtil("!!!"));
+    cout<<endl<<"Append Function:"<<endl<<appendedString.CStr()<<endl;
 
-    // Prepend + Append Function evidence
-    cout << endl << "Prepend + Append Function:" << endl;
-    _string.Prepend(StringUtil("!!!"));
-    cout << _string.CStr() << endl;
+    // Prepend Function evidence
+    StringUtil prependString(_string); // Create copy of _string
+    prependString.Prepend(StringUtil("!!!"));
+    cout<<endl<<"Prepend Function:"<<endl<<prependString.CStr()<<endl;
 
     // ToLower Function evidence
-    cout << endl << "ToLower Function:" << endl;
-    _string.ToLower();
-    cout << _string.CStr() << endl;
-    _string.ToUpper();
-    cout << _string.CStr() << endl;
+    StringUtil lowercasedString(_string); // Create copy of _string
+    lowercasedString.ToLower();
+    cout<<endl<<"ToLower Function:"<<endl<<lowercasedString.CStr()<<endl;
+
+    // ToUpper Function evidence
+    StringUtil uppercasedString(_string); // Create copy of _string
+    uppercasedString.ToUpper();
+    cout<<endl<<"ToUpper Function:"<<endl<<uppercasedString.CStr()<<endl;
 
     return 0;
 }
