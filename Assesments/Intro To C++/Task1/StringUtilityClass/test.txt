@@ -1,0 +1,20 @@
+Length Function:
+Character count is: 11
+
+CharacterAt Function:
+your letter is, o
+
+EqualTo Function:
+True
+
+Append Function:
+Hello World!!!
+
+Prepend Function:
+!!!Hello World
+
+ToLower Function:
+hello world
+
+ToUpper Function:
+HELLO WORLD

@@ -1,0 +1,3 @@
+﻿  StringUtil.cpp
+C:\Users\s211426\Documents\GitHub\AIE-2024\Assesments\StringUtilityClass\StringUtil.cpp(120,5): error C2561: 'StringUtil::Replace': function must return a value
+C:\Users\s211426\Documents\GitHub\AIE-2024\Assesments\StringUtilityClass\StringUtil.cpp(117,25): message : see declaration of 'StringUtil::Replace'
