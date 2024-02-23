@@ -124,12 +124,14 @@ StringUtil& StringUtil::Replace(const StringUtil& _find, const StringUtil& _repl
 StringUtil& StringUtil::ReadFromConsole()
 {
     // TODO: insert return statement here
+    return;
 }
 
 // Write the string to the console window.
 StringUtil& StringUtil::WriteToConsole()
 {
     // TODO: insert return statement here
+    return;
 }
 
 // Returns true if lhs == rhs.
@@ -142,10 +144,12 @@ bool StringUtil::operator==(const StringUtil& _other)
 char& StringUtil::operator[](size_t _index)
 {
     // TODO: insert return statement here
+    return;
 }
 // Replaces the characters in lhs with the characters in rhs.
 StringUtil& StringUtil::operator=(const StringUtil& _str)
 {
     // TODO: insert return statement here
+    return;
 }
 
